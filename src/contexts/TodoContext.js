@@ -1,13 +1,13 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 
 
-export default TodoContext = createContext({
+export const  TodoContext = createContext({
     todos:[{
         id: 1,
-        todo: "Complete this website",
+        title: "Complete this website",
         description: " Complete TickDone-v2 website",
-        progress: (num)=>{},
-        priority: (num)=>{},
+        todoStatus: -1,
+        priority: 1,
         dueDate: (new Date()).toLocaleDateString(),
         image:null
 
